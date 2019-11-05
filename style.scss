@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main{
+  background: #fff;
+  .invoices{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f1f3f6;
+    h1{
+      color:#778096;
+      font-size: 22px;
+      line-height: 110%;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 20px;
+      &:before{
+        content: '';
+        position: absolute;
+        top:50%;
+        left: 0;
+        width: 5px;
+        height: 30px;
+        background: #e4e6e9;
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        -o-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        top:50%;
+        right: 0;
+        width: 80%;
+        height: 1px;
+        background: #e5e7ea;
+      }
+    }
+    h2{
+      color:#000;
+      font-size: 16px;
+      line-height: 110%;
+      margin-bottom: 10px;
+    }
+    .buttons{
+      padding: 20px;
+      background: #fff;
+      margin-bottom: 20px;
+      div{
+        button{
+          padding: 10px 20px;
+          border: none;
+          background: #4973ff;
+          border-radius: 3px;
+          color: #fff;
+          font-size: 16px;
+          line-height: 110%;
+        }
+      }
+    }
+    .table {
+      padding: 20px;
+      background: #fff;
+      margin-bottom: 20px;
+      #table{
+        width: 100%;
+        border-collapse: collapse;
+        thead{
+          tr{
+            width: 100%;
+            background: #f1f3f6;
+            th{
+              padding: 10px;
+              width: 25%;
+              text-align: left;
+              font-size: 16px;
+              line-height: 110%;
+              color:#778096;
+            }
+            th:first-of-type{
+              border-radius: 3px 0 0 0 ;
+            }
+            th:last-of-type{
+              border-radius: 0 3px 0 0 ;
+            }
+          }
+        }
+        tbody{
+          tr{
+            border-bottom: 1px solid #778096;
+            th{
+              text-align: left;
+              padding: 20px 10px;
+              font-size: 14px;
+              line-height: 110%;
+              color: #b2b2b2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .create-invoices{
+    width: 80%;
+    display: none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f1f3f6;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(115,115,115,1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(115,115,115,1);
+    box-shadow: 0px 0px 13px 0px rgba(115,115,115,1);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    h1{
+      color:#778096;
+      font-size: 22px;
+      line-height: 110%;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 20px;
+      &:before{
+        content: '';
+        position: absolute;
+        top:50%;
+        left: 0;
+        width: 5px;
+        height: 30px;
+        background: #e4e6e9;
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        -o-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        top:50%;
+        right: 0;
+        width: 70%;
+        height: 1px;
+        background: #e5e7ea;
+      }
+    }
+    form{
+      border: 1px solid rgba(106, 106, 106, 0.29);
+      padding: 20px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      div{
+        flex-basis: 48%;
+        margin-bottom: 20px;
+        label{
+          color:#000;
+          font-size: 16px;
+          line-height: 110%;
+          margin-bottom: 10px;
+          display: block;
+        }
+        input{
+          width: 100%;
+          border: 1px solid rgba(106, 106, 106, 0.29);
+          border-radius: 3px;
+          padding: 5px;
+          min-height: 30px;
+        }
+      }
+      .textarea{
+        flex-basis: 100%;
+        textarea{
+          width: 100%;
+          border: 1px solid rgba(106, 106, 106, 0.29);
+          border-radius: 3px;
+          padding: 5px;
+          min-height: 50px;
+        }
+      }
+      .sub{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: flex-end;
+        input[type="submit"]{
+          width: auto;
+          padding: 10px 20px;
+          border: none;
+          background: #2f80ed;
+          border-radius: 3px;
+          color: #fff;
+          font-size: 16px;
+          line-height: 110%;
+        }
+      }
+    }
+  }
+}

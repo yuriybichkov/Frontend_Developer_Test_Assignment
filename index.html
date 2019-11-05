@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Developer Test Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="main">
+    <div class="invoices">
+        <h1>Invoices</h1>
+        <div class="buttons">
+            <h2>Actions</h2>
+            <div>
+                <button id="createBtn">Add new</button>
+            </div>
+        </div>
+        <div class="table">
+            <h2>Invoices</h2>
+            <table id="table">
+                <thead>
+                <tr>
+                    <th class="table-head" data-name="date_created">Create</th>
+                    <th class="table-head" data-name="number">No</th>
+                    <th class="table-head" data-name="date_supplied">Supply</th>
+                    <th class="table-head" data-name="comment">Comment</th>
+                    <th class="table-head" data-name="action">Action</th>
+                </tr>
+                </thead>
+                <tbody id="invoice-tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div id="modal" class="create-invoices">
+            <h1>Create invoices</h1>
+            <form id="form" class="form">
+                <div>
+                    <label>Number:</label>
+                    <input type="text" id="number">
+                </div>
+                <div>
+                    <label>Invoice Date:</label>
+                    <input type="date" id="date_created">
+                </div>
+                <div>
+                    <label>Supply Date:</label>
+                    <input type="date" id="date_supplied">
+                </div>
+                <div class="textarea">
+                    <label>Comment:</label>
+                    <textarea id="comment"></textarea>
+                </div>
+                <div id="subBtn" class="sub">
+                    <input type="submit" value="Save">
+                </div>
+            </form>
+        </div>
+
+</section>
+
+
+<script src="app.js"></script>
+</body>
+</html>
